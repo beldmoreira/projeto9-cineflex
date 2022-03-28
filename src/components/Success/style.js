@@ -34,8 +34,16 @@ letter-spacing: 0.04em;
 text-align: left;
 `;
 
+const OrderInformation = styled.div`
+padding: 0 30px;
+display: flex;
+flex-direction: column;
+font-size: 22px;
+`;
+
 export{
     Done,
     Font,
-    Typography  
+    Typography,
+    OrderInformation  
 }
