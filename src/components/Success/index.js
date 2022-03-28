@@ -3,10 +3,11 @@ import Button from "../Button";
 import { useNavigate } from "react-router-dom";
 
 
-export default function Success({title,date,time,seats,clients}){
+export default function Success({title,date,time,seats,clients,setBooking}){
     const navigate = useNavigate();
 
     function goToHomepage(){
+        setBooking(null);
         navigate('/');
     }
     return(
