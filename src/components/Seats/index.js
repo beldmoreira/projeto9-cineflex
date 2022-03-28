@@ -1,12 +1,12 @@
 import { Container, Input } from "./style";
 import useState from "react";
 import Button from "../Button";
-import { useNavigate } from "react-router";
+
 
 export default function Seats ({ seat, seatId, clientOrder }){
     const [name, setName] = useState ("");
     const [cpf, setCpf,] = useState ("");
-    const navigate = useNavigate();
+    
    
     return (
     <>
