@@ -28,6 +28,5 @@ margin-right:30px;
 export {
     Font,
     Container,
-    MoviePics,
-    MoviePosters
+    MoviePics
 }
