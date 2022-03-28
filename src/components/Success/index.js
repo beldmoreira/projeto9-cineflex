@@ -1,8 +1,14 @@
 import { Done, Font, Typography } from "./style";
 import Button from "../Button";
+import { useNavigate } from "react-router-dom";
 
 
 export default function Success(){
+    const navigate = useNavigate();
+
+    function goToHomepage(){
+        navigate('/');
+    }
     return(
     <>
         <Done> 
@@ -21,7 +27,7 @@ export default function Success(){
         <Typography></Typography>
         <Typography></Typography>
 
-        <Button>
+        <Button onClick={goToHomepage}>
         Voltar pra Home
         </Button>
     </>
