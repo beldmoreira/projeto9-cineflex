@@ -1,14 +1,18 @@
-import { Container, HoursButton, Font, PrintStyle } from "./style";
+import {HoursButton,PrintStyle } from "./style";
+import SessionTimes from "../SessionTimes";
 
-export default function HoursSessions(){
+export default function HoursSessions({ weekday, date, showtimes }){
     return(
       <>
-      <Container>
-      <Font> Selecione o horário </Font>
-      </Container>
-      <PrintStyle> </PrintStyle>
-      <HoursButton>      
-      </HoursButton>  
+      <PrintStyle> {weekday} - {date}</PrintStyle>
+      <HoursButton>
+        {
+          showtimes.map(showtime => (
+            <SessionTimes key={showtime.id} {...showtime} />
+          ))
+        }
+      </HoursButton>
       </>
     );
 }
+
