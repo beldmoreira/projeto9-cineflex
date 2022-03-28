@@ -36,7 +36,7 @@ width: 48px;
 height: 72px;
 `;
 
-const FootInfo = styled. div `
+const FootInfo = styled.div `
 height: 100%;
 display: flex;
 flex-direction: column;
